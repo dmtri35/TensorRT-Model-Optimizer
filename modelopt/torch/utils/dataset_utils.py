@@ -81,6 +81,7 @@ SUPPORTED_DATASET_CONFIG: dict[str, Any] = {
     },
     "local": {
         "config": {"path": "json", "data_files": "samples.json", "split": ["train"]},
+        "preprocess": lambda sample: sample["text"],
     }
 }
 
